@@ -331,9 +331,6 @@ img{
   
   /* For tall screens on mobiles & desktop*/
   @media screen and (min-height: 721px) {
-    .home__container {
-        height: 640px;
-    }
       .home__img {
           width: 400px;
       }
