@@ -253,3 +253,16 @@ img{
     display: block;
     margin-bottom: var(--mb-4);
 }
+
+/* ===== FOOTER=====*/
+.footer{
+    background-color: var(--first-color);
+    font-size: .8em;
+}
+.footer__container{
+    row-gap: 2rem;
+}
+.footer__data{
+    color: var(--white-color);
+    text-align: center;
+}
