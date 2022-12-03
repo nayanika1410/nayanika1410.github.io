@@ -187,7 +187,7 @@ img{
     row-gap: 5rem;
 }
 .home__title{
-    align-self: center;
+    align-self:flex-end;
     font-size: var(--big-font-size);
     color: var(--dark-color);
     line-height: .8;
