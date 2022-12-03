@@ -220,7 +220,9 @@ img{
 
 /* ===== ABOUT =====*/
 .about__container{
-    position: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     justify-items: center;
     row-gap: 2rem;
     text-align: center;
