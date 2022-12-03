@@ -192,13 +192,6 @@ img{
     color: var(--dark-color);
     line-height: .8;
 }
-.home__name{
-    align-self: flex-end;
-    font-size: var(--h2-font-size);
-    text-shadow: 0 20px 25px rgba(0,0,0,.5);
-    color: var(--text-color);
-    line-height: 1.2;
-}
 .home__title span{
     text-shadow: 0 20px 25px rgba(0,0,0,.5);
 }
@@ -266,3 +259,80 @@ img{
     color: var(--white-color);
     text-align: center;
 }
+
+/* ===== MEDIA QUERIES =====*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .home__img {
+      width: 230px;
+    }
+  }
+  
+  @media screen and (min-width: 768px){
+      body{
+          margin: 0;
+      }
+      .section{
+          padding-top: 4rem;
+      }
+      .section-title{
+          margin-bottom: 3rem;
+      }
+      .section-title::after{
+          width: 64px;
+          top: 3rem;
+      }
+      .nav{
+          height: calc(var(--header-height) + 1rem);
+      }
+      .nav__list{
+          display: flex;
+      }
+      .nav__item{
+          margin-left: var(--mb-4);
+          margin-bottom: 0;
+      }
+      .nav__toggle{
+          display: none;
+      }
+      .nav__link{
+          color: var(--white-color);
+      }
+      .nav__link:hover{
+          color: var(--white-color);
+      }
+      .active::after{
+          background-color: var(--white-color);
+      }
+  
+      .home__container{
+          height: 100vh;
+          grid-template-rows: 1.7fr 1fr;
+          row-gap: 0;
+      }
+      .home__img{
+          width: 400px;
+      }
+  
+      .about__container{
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          text-align: initial;
+          padding: 4rem 0;
+      }
+      .about__img{
+          width: 200px;
+          height: 200px;
+      }
+      .about__img img{
+          width: 165px;
+      }
+  }
+  
+  /* For tall screens on mobiles & desktop*/
+  @media screen and (min-height: 721px) {
+      
+      .home__img {
+          width: 400px;
+      }
+  }
