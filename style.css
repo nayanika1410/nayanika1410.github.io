@@ -330,6 +330,10 @@ img{
       .about__img img{
           width: 165px;
       }
+
+      .footer__container{
+        align-items: center;
+      }
   }
   
   /* For tall screens on mobiles & desktop*/
